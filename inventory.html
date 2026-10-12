@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoTrade</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <a href="index.html">
+            <img src="img/logo.webp" alt="Логотип" class="logo">
+        </a>
+        <nav>
+            <ul class="menu-container">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="inventory.html">Автомобили в наличии</a></li>
+                <li><a href="about.html">О нас</a></li>
+                <li><a href="login.html">Войти</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1 class="catalog-title">Каталог автомобилей</h1>
+        <div class="inventory-layout">
+            <aside class="catalog-filters" aria-label="Фильтры каталога">
+                <h2>Фильтры</h2>
+                <fieldset>
+                    <legend>Объём двигателя</legend>
+                    <label><input type="checkbox" data-filter="engine" value="1.6"> 1.6 л</label>
+                    <label><input type="checkbox" data-filter="engine" value="1.8"> 1.8 л</label>
+                    <label><input type="checkbox" data-filter="engine" value="1.5"> 1.5 л</label>
+                    <label><input type="checkbox" data-filter="engine" value="2.0"> 2.0 л</label>
+                    <label><input type="checkbox" data-filter="engine" value="2.5"> 2.5 л</label>
+                </fieldset>
+                <fieldset>
+                    <legend>Цена за сутки</legend>
+                    <label><input type="checkbox" data-filter="price" data-min="0" data-max="2999"> До 3 000 ₽</label>
+                    <label><input type="checkbox" data-filter="price" data-min="3000" data-max="3999"> 3 000–3 999 ₽</label>
+                    <label><input type="checkbox" data-filter="price" data-min="4000" data-max="Infinity"> От 4 000 ₽</label>
+                </fieldset>
+                <button class="sort-products" type="button">Цена: по возрастанию ↑</button>
+                <button class="clear-filters" type="button">Сбросить фильтры</button>
+            </aside>
+
+            <section class="products-container" aria-label="Автомобили">
+                <article class="product" data-engine="1.6" data-price="2900">
+                    <img src="img/octavia.jpg" alt="Skoda Octavia">
+                    <div class="info-products">
+                        <h3>Skoda Octavia</h3>
+                        <p class="engine">Объём двигателя: 1.6 л</p>
+                        <div class="price">Цена: 2 900 ₽/сутки</div>
+                        <div>
+                            <button class="buy-button" type="button">Арендовать</button>
+                        </div>
+                    </div>
+                </article>
+                <article class="product" data-engine="1.8" data-price="3500">
+                    <img src="img/jetta.jpeg" alt="Volkswagen Jetta">
+                    <div class="info-products">
+                        <h3>Volkswagen Jetta</h3>
+                        <p class="engine">Объём двигателя: 1.8 л</p>
+                        <div class="price">Цена: 3 500 ₽/сутки</div>
+                        <div>
+                            <button class="buy-button" type="button">Арендовать</button>
+                        </div>
+                    </div>
+                </article>
+                <article class="product" data-engine="2.0" data-price="4200">
+                    <img src="img/corolla.jpg" alt="Toyota Corolla">
+                    <div class="info-products">
+                        <h3>Toyota Corolla</h3>
+                        <p class="engine">Объём двигателя: 2.0 л</p>
+                        <div class="price">Цена: 4 200 ₽/сутки</div>
+                        <div>
+                            <button class="buy-button" type="button">Арендовать</button>
+                        </div>
+                    </div>
+                </article>
+                <article class="product" data-engine="2.5" data-price="4900">
+                    <img src="img/camry.jpg" alt="Toyota Camry">
+                    <div class="info-products">
+                        <h3>Toyota Camry</h3>
+                        <p class="engine">Объём двигателя: 2.5 л</p>
+                        <div class="price">Цена: 4 900 ₽/сутки</div>
+                        <div>
+                            <button class="buy-button" type="button">Арендовать</button>
+                        </div>
+                    </div>
+                </article>
+                <article class="product" data-engine="1.5" data-price="3500">
+                    <img src="img/civic.jpeg" alt="Honda Civic">
+                    <div class="info-products">
+                        <h3>Honda Civic</h3>
+                        <p class="engine">Объём двигателя: 1.5 л</p>
+                        <div class="price">Цена: 3 500 ₽/сутки</div>
+                        <div>
+                            <button class="buy-button" type="button">Арендовать</button>
+                        </div>
+                    </div>
+                </article>
+                <article class="product" data-engine="1.6" data-price="2800">
+                    <img src="img/solaris.jpeg" alt="Hyundai Solaris">
+                    <div class="info-products">
+                        <h3>Hyundai Solaris</h3>
+                        <p class="engine">Объём двигателя: 1.6 л</p>
+                        <div class="price">Цена: 2 800 ₽/сутки</div>
+                        <div>
+                            <button class="buy-button" type="button">Арендовать</button>
+                        </div>
+                    </div>
+                </article>
+                <article class="product" data-engine="2.0" data-price="3900">
+                    <img src="img/mazda.jpeg" alt="Mazda 3">
+                    <div class="info-products">
+                        <h3>Mazda 3</h3>
+                        <p class="engine">Объём двигателя: 2.0 л</p>
+                        <div class="price">Цена: 3 900 ₽/сутки</div>
+                        <div>
+                            <button class="buy-button" type="button">Арендовать</button>
+                        </div>
+                    </div>
+                </article>
+                <article class="product" data-engine="2.5" data-price="5200">
+                    <img src="img/k5.webp" alt="Kia K5">
+                    <div class="info-products">
+                        <h3>Kia K5</h3>
+                        <p class="engine">Объём двигателя: 2.5 л</p>
+                        <div class="price">Цена: 5 200 ₽/сутки</div>
+                        <div>
+                            <button class="buy-button" type="button">Арендовать</button>
+                        </div>
+                    </div>
+                </article>
+            </section>
+        </div>
+    </main>
+
+    <script>
+        const filterInputs = document.querySelectorAll("[data-filter]");
+        const products = document.querySelectorAll(".inventory-layout .product");
+        const clearFiltersButton = document.querySelector(".clear-filters");
+        const sortProductsButton = document.querySelector(".sort-products");
+        let sortAscending = true;
+
+        function sortProducts() {
+            const sortedProducts = [...products].sort((first, second) => {
+                const priceDifference = Number(first.dataset.price) - Number(second.dataset.price);
+                return sortAscending ? priceDifference : -priceDifference;
+            });
+
+            sortedProducts.forEach((product) => product.parentElement.append(product));
+            sortProductsButton.textContent = `Цена: по ${sortAscending ? "возрастанию ↑" : "убыванию ↓"}`;
+        }
+
+        function filterProducts() {
+            const selectedEngines = [...document.querySelectorAll('[data-filter="engine"]:checked')]
+                .map((input) => input.value);
+            const selectedPrices = [...document.querySelectorAll('[data-filter="price"]:checked')];
+
+            products.forEach((product) => {
+                const matchesEngine = selectedEngines.length === 0 || selectedEngines.includes(product.dataset.engine);
+                const price = Number(product.dataset.price);
+                const matchesPrice = selectedPrices.length === 0 || [...selectedPrices].some((input) => (
+                    price >= Number(input.dataset.min) && price <= Number(input.dataset.max)
+                ));
+                product.hidden = !(matchesEngine && matchesPrice);
+            });
+        }
+
+        filterInputs.forEach((input) => input.addEventListener("change", filterProducts));
+        sortProductsButton.addEventListener("click", () => {
+            sortAscending = !sortAscending;
+            sortProducts();
+        });
+        clearFiltersButton.addEventListener("click", () => {
+            filterInputs.forEach((input) => { input.checked = false; });
+            filterProducts();
+        });
+        sortProducts();
+    </script>
+
+    <footer>
+        <p>&copy; 2026 RentAuto. Все права защищены.</p>
+    </footer>
+</body>
+
+</html>
